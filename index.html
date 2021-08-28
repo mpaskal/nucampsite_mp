@@ -16,7 +16,10 @@
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster%7COpen+Sans"
@@ -28,7 +31,10 @@
   <body>
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row row-content align-items-center">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <img src="img/logo.png" class="img-fluid" alt="logo" />
+          </div>
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
@@ -38,6 +44,9 @@
     </header>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" height="30" width="30" alt="logo"
+        /></a>
         <button
           class="navbar-toggler ml-auto"
           type="button"
@@ -78,11 +87,20 @@
           <h2 class="text-sm-right">Discover & Review</h2>
         </div>
         <div class="col">
-          <h3>Our Campsites</h3>
-          <p class="d-none d-sm-block">
-            Explore our growing database of curated campsites and leave your own
-            reviews!
-          </p>
+          <div class="media">
+            <img
+              class="d-flex mr-3 img-thumbnail"
+              src="img/breadcrumb-trail-thumb.jpg"
+              alt="Breadcrumb Trail"
+            />
+            <div class="media-body align-self-center">
+              <h3>Our Campsites</h3>
+              <p class="d-none d-sm-block">
+                Explore our growing database of curated campsites and leave your
+                own reviews!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -104,11 +122,20 @@
           <h2>Our Community Partners</h2>
         </div>
         <div class="col">
-          <h3>Bootstrap Outfitters</h3>
-          <p class="d-none d-sm-block">
-            Bootstrap Outfitters supplies you with the gear you need at prices
-            you can't beat.
-          </p>
+          <div class="media">
+            <img
+              class="d-flex mr-3 img-thumbnail"
+              src="img/bootstrap-thumb.png"
+              alt="Bootstrap Outfitters"
+            />
+            <div class="media-body align-self-center">
+              <h3>Bootstrap Outfitters</h3>
+              <p class="d-none d-sm-block">
+                Bootstrap Outfitters supplies you with gear you need at prices
+                you can't beat.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -126,14 +153,35 @@
           </div>
           <div class="col-6 col-sm-5 text-center">
             <h5>Social</h5>
-            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"
+              ><i class="fa fa-youtube"></i
+            ></a>
           </div>
           <div class="col-sm-4 text-center">
-            <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-            <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            <a role="button" class="btn btn-link" href="tel:+12065551234"
+              ><i class="fa fa-phone"></i> 1-206-555-1234</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link"
+              href="mailto:campsites@nucamp.co"
+              ><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a
+            >
           </div>
         </div>
       </div>
