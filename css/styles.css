@@ -42,3 +42,11 @@ footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0;
 }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  border: solid #5637dd;
+}
