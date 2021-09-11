@@ -14,10 +14,10 @@
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
-    "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
     "rimraf": "^3.0.2",
+    "sass": "^1.39.2",
     "usemin-cli": "^0.6.0"
   },
   "scripts": {
@@ -27,11 +27,11 @@
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
+    "scss": "sass scss/styles.scss css/styles.css",
     "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
+    "test": "echo 'Error: no test specified' && exit 1",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
   },
   "author": "",
   "license": "ISC"

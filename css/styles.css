@@ -16,7 +16,7 @@ header h2 {
   color: #cec8ff;
 }
 
-footer {
+.site-footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0;
 }
@@ -28,27 +28,22 @@ footer {
   color: white;
 }
 
+.navbar {
+  background-color: #901cad;
+}
+
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
 }
 
-.navbar {
-  background-color: #901cad;
-}
-
-.site-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px 0;
+.carousel {
+  border: solid #5637dd;
 }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.carousel {
-  border: solid #5637dd;
 }
 
 #carouselButton {
@@ -57,3 +52,15 @@ footer {
   bottom: 0;
   z-index: 100;
 }
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: #901cad;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
